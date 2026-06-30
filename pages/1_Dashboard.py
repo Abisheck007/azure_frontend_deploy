@@ -34,9 +34,9 @@ st.write("Real-time travel metrics, analytics charts, and trend data.")
 backend_url = st.session_state.get("backend_url")
 if not backend_url:
     try:
-        backend_url = st.secrets.get("BACKEND_URL", os.environ.get("BACKEND_URL", "https://flight-backend1-fgfuckcda9dsdmgc.southindia-01.azurewebsites.net"))
+        backend_url = st.secrets.get("BACKEND_URL", os.environ.get("BACKEND_URL", "https://flight-backend-debwhqgzbzcaewcp.southindia-01.azurewebsites.net/"))
     except Exception:
-        backend_url = os.environ.get("BACKEND_URL", "https://flight-backend1-fgfuckcda9dsdmgc.southindia-01.azurewebsites.net")
+        backend_url = os.environ.get("BACKEND_URL", "https://flight-backend-debwhqgzbzcaewcp.southindia-01.azurewebsites.net/")
     st.session_state.backend_url = backend_url
 
 # Fetch Stats from Backend

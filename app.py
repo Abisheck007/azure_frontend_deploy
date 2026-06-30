@@ -31,13 +31,13 @@ if "backend_url" not in st.session_state:
             "BACKEND_URL",
             os.environ.get(
                 "BACKEND_URL",
-                "https://flight-backend1-fgfuckcda9dsdmgc.southindia-01.azurewebsites.net"
+                "https://flight-backend-debwhqgzbzcaewcp.southindia-01.azurewebsites.net/"
             )
         )
     except Exception:
         st.session_state.backend_url = os.environ.get(
             "BACKEND_URL",
-            "https://flight-backend1-fgfuckcda9dsdmgc.southindia-01.azurewebsites.net"
+            "https://flight-backend-debwhqgzbzcaewcp.southindia-01.azurewebsites.net/"
         )
 backend_url = st.session_state.backend_url
 
